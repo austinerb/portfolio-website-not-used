@@ -431,6 +431,7 @@ nav .nav-menu-desktop li:last-child a:hover {
 footer {
   background-color: var(--color-dark-grey);
   padding: 30px;
+  padding-bottom: 15px;
 }
 
 footer a {
@@ -453,6 +454,7 @@ footer ul {
 footer ul li {
   display: inline-block;
   margin-right: 25px;
+  margin-bottom: 15px;
 }
 
 footer ul li:last-child {
