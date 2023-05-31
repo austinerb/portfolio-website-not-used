@@ -61,34 +61,34 @@ nav p a:hover {
   text-decoration: underline;
 }
 
-nav ul {
+nav .nav-menu-desktop {
   list-style: none;
   display: inline-block;
   position: absolute;
   right: 40px;
 }
 
-nav ul li {
+nav .nav-menu-desktop li {
   display: inline-block;
   padding-top: 32px;
 }
 
-nav ul li a {
+nav .nav-menu-desktop li a {
   padding: 17px 20px;;
   margin-left: 10px;
 }
 
-nav ul li a:hover {
+nav .nav-menu-desktop li a:hover {
   background-color: var(--color-light-grey);
 }
 
-nav ul li:last-child a {
+nav .nav-menu-desktop li:last-child a {
   background-color: red;
   color: white;
   margin-left: 25px;
 }
 
-nav ul li:last-child a:hover {
+nav .nav-menu-desktop li:last-child a:hover {
   background-color: var(--color-light-grey);
   color: black;
 }
@@ -175,6 +175,16 @@ nav ul li:last-child a:hover {
   align-items: center;
 }
 
+.about .about-desc-content p {
+  display: grid;
+  grid-template: 1fr / 20px 1fr;
+  column-gap: 10px;
+}
+
+.about .about-desc-content i {
+  text-align: center;
+}
+
 /* services */
 
 .services {
@@ -199,16 +209,25 @@ nav ul li:last-child a:hover {
 }
 
 .services .services-rate {
-  text-align: center;
   font-size: 25px;
   margin-bottom: 50px;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  align-items: center;
 }
 
-.services .services-rate span {
+.services .services-rate p {
+  display: inline-block;
+  text-align: center;
+  background-color: rgba(0,255,0,.1);
+  padding: 17px 20px;
+  margin: 0 auto;
+}
+
+.services .services-rate p span {
   color: green;
   font-weight: bold;
   font-size: 30px;
-  /* vertical-align: middle; */
 }
 
 .services ul {
@@ -244,17 +263,11 @@ nav ul li:last-child a:hover {
   padding: 17px 20px;
 }
 
-/* divider */
-
-.divider {
-  height: 150px;
-  background-color: var(--color-light-grey);
-}
-
 /* my work */
 
 .work {
   padding: var(--vertical-padding) 100px;
+  background-color: var(--color-light-grey);
 }
 
 .work h3 {
@@ -522,19 +535,46 @@ footer ul li a:hover {
     display: none;
   }
 
-  nav .nav-menu-mobile {
+  nav .nav-menu-mobile-container {
     background-color: rgba(255,255,255,.95);
     position: fixed;
     right: 0;
     top: 0;
-    padding: 100px;
     height: 100vh;
-    display: grid;
-    grid-template: 1fr 1fr 1fr 1fr / 1fr;
-    padding: 100px;
     align-items: center;
     justify-items: center;
     z-index: 9;
+  }
+
+  nav .nav-menu-mobile {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr;
+    row-gap: 30px;
+    padding: 120px;
+  }
+
+  nav .nav-menu-mobile {
+    list-style: none;
+  }
+
+  nav .nav-menu-mobile li a {
+    padding: 17px 20px;
+    margin-left: 10px;
+  }
+
+  nav .nav-menu-mobile li a:hover {
+    background-color: var(--color-light-grey);
+  }
+
+  nav .nav-menu-mobile li:last-child a {
+    background-color: red;
+    color: white;
+    margin-left: 25px;
+  }
+
+  nav .nav-menu-mobile li:last-child a:hover {
+    background-color: var(--color-light-grey);
+    color: black;
   }
 
   nav .nav-menu-mobile li {
@@ -544,11 +584,11 @@ footer ul li a:hover {
     margin-bottom: 30px;
   }
 
-  nav ul li a {
+  nav .nav-menu-mobile li a {
     margin-left: 0;
   }
 
-  nav ul li:last-child a {
+  nav .nav-menu-mobile li:last-child a {
     margin-left: 0;
   }
 
