@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css">
     <script defer src="scripts.js" charset="utf-8"></script>
+    <script src="https://kit.fontawesome.com/749b5d6312.js" crossorigin="anonymous"></script>
     <script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
   </head>
   <body>
@@ -13,12 +14,24 @@
 
       <nav>
         <p><a href="index.html"><strong>Websites</strong> by Erb</a></p>
-        <ul>
+        <div class="nav-menu-btn">
+          <div class="nav-menu-bars"><i class="fa-solid fa-bars"></i></i></div>
+          <div class="nav-menu-close hidden"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <ul class="nav-menu-desktop">
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#work">My Work</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="nav-menu-mobile-container hidden">
+          <ul class="nav-menu-mobile">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </nav>
 
       <div class="hero">
@@ -40,10 +53,13 @@
           </div>
           <div class="about-desc">
             <div class="about-desc-content">
-              <p>I'm a 28yo web developer located in High Point, NC. I
-                believe in creating pleasing website designs that are
-                easy to navigate and help your customers learn about your business
-                and access your services.</p>
+              <p class="age"><i class="fa-solid fa-child"></i> 28 years old</p>
+              <br>
+              <p class="location"><i class="fa-solid fa-location-dot"></i> High Point, NC</p>
+              <br>
+              <p class="quote"><i class="fa-solid fa-quote-left"></i> I believe in creating pleasing website designs that are
+                easy to navigate and help your customers access your services
+                and learn about your business.</p>
             </div>
           </div>
         </div>

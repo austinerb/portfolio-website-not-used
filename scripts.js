@@ -26,7 +26,7 @@ function setShapesTop() {
 }
 
 
-// set shapes container height to document height
+// set shapes container height equal to document height
 
 // get shapes container
 let shapeContainer = document.querySelector(".shapes-container");
@@ -50,6 +50,29 @@ window.addEventListener("resize", function() {
     height = docHeight - footerHeight;
     shapeContainer.style.setProperty("height", height + "px");
 });
+
+
+// mobile menu display
+
+// get menu btn
+let menuBtn = document.querySelector(".nav-menu-btn");
+// get menu bars
+let menuBars = document.querySelector(".nav-menu-bars");
+// get menu close
+let menuClose = document.querySelector(".nav-menu-close");
+// get nav ul
+let menuMobile = document.querySelector(".nav-menu-mobile-container");
+// on menu btn click
+menuBtn.addEventListener("click", toggleMenu);
+
+// toggle display of menu and menu buttons
+function toggleMenu() {
+  // toggle menu btn icon display
+  menuBars.classList.toggle("hidden");
+  menuClose.classList.toggle("hidden");
+  // toggle ul display
+  menuMobile.classList.toggle("hidden");
+}
 
 // generate shapes and insert them into the document
 
