@@ -192,12 +192,18 @@ nav .nav-menu-desktop li:last-child a:hover {
 /* services */
 
 .services {
-  padding: var(--vertical-padding) 100px;
+  background-color: var(--color-light-grey);
+  width: 100%;
 }
 
 .services h3 {
   text-align: center;
   margin-bottom: 100px;
+}
+
+.services-content {
+  padding: var(--vertical-padding) 100px;
+  width: 70%;
 }
 
 .services .services-desc {
@@ -271,7 +277,6 @@ nav .nav-menu-desktop li:last-child a:hover {
 
 .work {
   padding: var(--vertical-padding) 0;
-  background-color: var(--color-light-grey);
 }
 
 .work h3 {
@@ -583,7 +588,7 @@ footer ul li a:hover {
     column-gap: 35px;
   }
 
-  .services {
+  .services-content {
     width: 90%;
     margin: 0 auto;
     padding-left: 0;
