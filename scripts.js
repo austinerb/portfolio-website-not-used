@@ -88,6 +88,7 @@ emailAlert.addEventListener("click", function(){
   emailAlert.classList.toggle("hidden");
 });
 
+
 // generate shapes and insert them into the document
 
 // * sometimes it looks good and often it looks
