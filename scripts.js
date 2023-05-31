@@ -75,6 +75,19 @@ function toggleMenu() {
   menuClickaway.classList.toggle("hidden");
 }
 
+
+// copy email to clipboard
+
+let email = document.querySelector(".contact-email");
+let emailAlert = document.querySelector(".contact-email-display-msg-container");
+email.addEventListener("click", function() {
+  navigator.clipboard.writeText("austin.erb8@gmail.com");
+  emailAlert.classList.toggle("hidden");
+});
+emailAlert.addEventListener("click", function(){
+  emailAlert.classList.toggle("hidden");
+});
+
 // generate shapes and insert them into the document
 
 // * sometimes it looks good and often it looks
