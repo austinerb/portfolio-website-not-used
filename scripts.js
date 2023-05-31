@@ -54,24 +54,25 @@ window.addEventListener("resize", function() {
 
 // mobile menu display
 
-// get menu btn
 let menuBtn = document.querySelector(".nav-menu-btn");
-// get menu bars
 let menuBars = document.querySelector(".nav-menu-bars");
-// get menu close
 let menuClose = document.querySelector(".nav-menu-close");
-// get nav ul
 let menuMobile = document.querySelector(".nav-menu-mobile-container");
-// on menu btn click
+let menuClickaway = document.querySelector(".nav-menu-mobile-clickaway");
+let menuLinks = document.querySelectorAll(".nav-menu-mobile li a");
+
 menuBtn.addEventListener("click", toggleMenu);
+menuClickaway.addEventListener("click", toggleMenu);
+for (let i = 0; i < menuLinks.length; i++) {
+  menuLinks[i].addEventListener("click", toggleMenu);
+}
 
 // toggle display of menu and menu buttons
 function toggleMenu() {
-  // toggle menu btn icon display
   menuBars.classList.toggle("hidden");
   menuClose.classList.toggle("hidden");
-  // toggle ul display
   menuMobile.classList.toggle("hidden");
+  menuClickaway.classList.toggle("hidden");
 }
 
 // generate shapes and insert them into the document
