@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;700&display=swap');
+
 :root {
   --color-light-grey: rgba(220,220,220,.5);
   --color-dark-grey: rgba(20,20,20,1);
@@ -9,7 +11,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Geologica', sans-serif;
 }
 
 a {
@@ -132,11 +134,13 @@ nav .nav-menu-desktop li:last-child a:hover {
 }
 
 .hero ul li:first-child a {
-  background-color: yellow;
+  background-color: green;
+  color: white;
 }
 
 .hero ul li:first-child a:hover {
   background-color: var(--color-light-grey);
+  color: black;
 }
 
 .hero ul li:last-child a {
@@ -204,6 +208,7 @@ nav .nav-menu-desktop li:last-child a:hover {
 .services-content {
   padding: var(--vertical-padding) 100px;
   width: 70%;
+  margin: 0 auto;
 }
 
 .services .services-desc {
@@ -381,8 +386,8 @@ nav .nav-menu-desktop li:last-child a:hover {
   background-color: var(--color-light-grey);
 }
 
-.contact .contact-email p a:hover {
-  text-decoration: underline;
+.contact .contact-email p:hover {
+  cursor: pointer;
 }
 
 .contact .contact-email-message {
@@ -411,8 +416,14 @@ nav .nav-menu-desktop li:last-child a:hover {
 
 .contact .contact-email-display-msg p {
   background-color: red;
-  padding: 17px 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   color: white;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
 /* footer */
