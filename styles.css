@@ -285,11 +285,15 @@ nav .nav-menu-desktop li:last-child a:hover {
 }
 
 .work .work-item {
-  display: grid;
-  grid-template: 1fr / 1fr 1fr;
   align-items: center;
   background-color: rgba(255,255,255,0.5);
   padding: 25px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.work .work-item .work-item-img {
+  margin-bottom: 30px;
 }
 
 .work .work-item .work-item-img img {
@@ -300,7 +304,7 @@ nav .nav-menu-desktop li:last-child a:hover {
 }
 
 .work .work-item .work-item-desc {
-  padding-left: 25px;
+  padding: 20px;
   display: grid;
   grid-template: 1fr / 1fr;
   align-items: center;
